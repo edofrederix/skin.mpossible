@@ -28,7 +28,7 @@ mkdir -p $BUILDDIR/$PACKAGENAME
 #make clean -C ./media
 make -C ./media
 mkdir -p $BUILDDIR/$PACKAGENAME/media
-cp ./media/Textures.xbt $BUILDDIR/$PACKAGENAME/media/
+cp ./media/textures.xbt $BUILDDIR/$PACKAGENAME/media/
 
 # Copy files
 cp -r $CONTENT $BUILDDIR/$PACKAGENAME/
