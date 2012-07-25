@@ -1,5 +1,5 @@
-TARGET=Textures.xbt
-XBMCTEX=/home/mpossible/git/xbmc-mpossible/tools/TexturePacker/TexturePacker
+TARGET=textures.xbt
+XBMCTEX=TexturePacker
 
 IMAGES := $(shell find . -name "*jpg")
 IMAGES += $(shell find . -name "*png")
@@ -9,13 +9,9 @@ all: $(TARGET)
 
 .PHONY: force
 
-$(TARGET): $(XBMCTEX) $(IMAGES)
-	$(XBMCTEX) -input . -output $(TARGET)
-
-$(XBMCTEX): force
-	$(MAKE) -C /home/mpossible/git/xbmc-mpossible/tools/TexturePacker
+$(TARGET): $(IMAGES)
+        $(XBMCTEX) -input . -output $(TARGET)
 
 clean:
-	rm -f $(TARGET)
+        rm -f $(TARGET)
 distclean: clean
-
