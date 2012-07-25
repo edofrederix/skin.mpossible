@@ -1,0 +1,21 @@
+mPossible skin - the default mPossible skin for XBMC
+
+Written by:
+
+Team XBMC (Jezz_X)
+https://github.com/xbmc/xbmc
+
+Modified by:
+
+Edo Frederix
+mPossible Media-PC on TV
+http://www.mpossible.nl
+
+---- Summary -----------------------------------------------------------------
+
+This is the mPossible skin. It is for a major part based on the Confluence
+skin, by team XBMC and in specific Jezz_X. Many thanks!
+
+---- Usage -------------------------------------------------------------------
+
+Run the build script to create a package in the ./build directory. The package contains all required files and textures and may be readily distributed as an XBMC addon. The build script uses the texturepacker program, provided with XBMC. Make sure a proper binary of texturepacker resides somewhere in your $PATH.
