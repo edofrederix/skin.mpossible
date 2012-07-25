@@ -30,7 +30,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath fallback="special://skin/backgrounds/videos.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</imagepath>
+			<imagepath fallback="special://skin/backgrounds/purple.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</imagepath>
 			<timeperimage>10000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
@@ -53,7 +53,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath fallback="special://skin/backgrounds/music.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</imagepath>
+			<imagepath fallback="special://skin/backgrounds/blue.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</imagepath>
 			<timeperimage>10000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
@@ -76,7 +76,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath fallback="special://skin/backgrounds/pictures.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</imagepath>
+			<imagepath fallback="special://skin/backgrounds/green.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</imagepath>
 			<timeperimage>10000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
@@ -99,7 +99,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath fallback="special://skin/backgrounds/programs.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</imagepath>
+			<imagepath fallback="special://skin/backgrounds/cyan.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</imagepath>
 			<timeperimage>10000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
@@ -122,7 +122,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath fallback="special://skin/backgrounds/weather.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</imagepath>
+			<imagepath fallback="special://skin/backgrounds/red.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</imagepath>
 			<timeperimage>10000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
@@ -147,7 +147,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath fallback="special://skin/backgrounds/settings.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</imagepath>
+			<imagepath fallback="special://skin/backgrounds/orange.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</imagepath>
 			<timeperimage>10000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>

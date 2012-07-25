@@ -48,7 +48,7 @@
 					<posy>80</posy>
 					<width>560</width>
 					<height>350</height>
-					<imagepath fallback="special://skin/backgrounds/weather.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</imagepath>
+					<imagepath fallback="special://skin/backgrounds/red.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</imagepath>
 					<timeperimage>500</timeperimage>
 					<pauseatend>1000</pauseatend>
 					<fadetime>0</fadetime>
