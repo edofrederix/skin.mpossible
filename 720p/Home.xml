@@ -33,12 +33,12 @@
 		</control>
 		<control type="image">
 			<description>LOGO</description>
-			<posx>512</posx>
+			<posx>574</posx>
 			<posy>145r</posy>
-			<width>256</width>
-			<height>128</height>
+			<width>128</width>
+			<height>144</height>
 			<aspectratio aligny="bottom">keep</aspectratio>
-			<texture>xbmc-logo.png</texture>
+			<texture>mpossible-logo.png</texture>
 			<visible>!IntegerGreaterThan(Container(9002).NumItems,0)</visible>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
