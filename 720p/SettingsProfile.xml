@@ -62,7 +62,7 @@
 				<width>220</width>
 				<height>80</height>
 				<aspectratio>keep</aspectratio>
-				<texture>mpossible-horizontal.png</texture>
+				<texture>mPossible_Logo.png</texture>
 			</control>
 			<control type="button" id ="4">
 				<description>Enable Login screen</description>

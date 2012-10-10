@@ -175,8 +175,8 @@
 				<width>160</width>
 				<height>170</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
-				<bordertexture border="5">button-nofocus.png</bordertexture>
-				<bordersize>5</bordersize>
+				<bordertexture border="10">button-nofocus.png</bordertexture>
+				<bordersize>10</bordersize>
 			</control>
 			<control type="label">
 				<posx>90</posx>
@@ -207,8 +207,8 @@
 				<width>160</width>
 				<height>170</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
-				<bordertexture border="5">folder-focus.png</bordertexture>
-				<bordersize>5</bordersize>
+				<bordertexture border="10">folder-focus.png</bordertexture>
+				<bordersize>10</bordersize>
 				<visible>Control.HasFocus(8000)</visible>
 			</control>
 			<control type="image">
@@ -217,8 +217,8 @@
 				<width>160</width>
 				<height>170</height>
 				<texture>$INFO[ListItem.Icon]</texture>
-				<bordertexture border="5">button-nofocus.png</bordertexture>
-				<bordersize>5</bordersize>
+				<bordertexture border="10">button-nofocus.png</bordertexture>
+				<bordersize>10</bordersize>
 				<visible>!Control.HasFocus(8000)</visible>
 			</control>
 			<control type="label">
@@ -290,8 +290,8 @@
 				<height>155</height>
 				<aspectratio>scale</aspectratio>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
-				<bordertexture border="5">button-nofocus.png</bordertexture>
-				<bordersize>5</bordersize>
+				<bordertexture border="10">button-nofocus.png</bordertexture>
+				<bordersize>10</bordersize>
 			</control>
 			<control type="label">
 				<posx>120</posx>
@@ -336,8 +336,8 @@
 				<height>155</height>
 				<aspectratio>scale</aspectratio>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
-				<bordertexture border="5">folder-focus.png</bordertexture>
-				<bordersize>5</bordersize>
+				<bordertexture border="10">folder-focus.png</bordertexture>
+				<bordersize>10</bordersize>
 				<visible>Control.HasFocus(8001)</visible>
 			</control>
 			<control type="image">
@@ -347,8 +347,8 @@
 				<height>155</height>
 				<aspectratio>scale</aspectratio>
 				<texture>$INFO[ListItem.Icon]</texture>
-				<bordertexture border="5">button-nofocus.png</bordertexture>
-				<bordersize>5</bordersize>
+				<bordertexture border="10">button-nofocus.png</bordertexture>
+				<bordersize>10</bordersize>
 				<visible>!Control.HasFocus(8001)</visible>
 			</control>
 			<control type="label">

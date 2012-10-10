@@ -15,7 +15,7 @@
 		<include>CommonMediaPlayingBackground</include>
 		<control type="image">
 			<posx>0</posx>
-			<posy>340r</posy>
+			<posy>294r</posy>
 			<width>1280</width>
 			<height>250</height>
 			<colordiffuse>AAFFFFFF</colordiffuse>
@@ -24,39 +24,17 @@
 		</control>
 		<control type="image">
 			<posx>0</posx>
-			<posy>90r</posy>
+			<posy>44r</posy>
 			<width>1280</width>
-			<height>90</height>
+			<height>44</height>
 			<texture>floor.png</texture>
 			<animation effect="fade" time="250" condition="Window.Previous(Home)">WindowOpen</animation>
 			<animation effect="fade" time="250" condition="Window.Next(Home)">WindowClose</animation>
 		</control>
-		<control type="image">
-			<description>LOGO</description>
-			<posx>574</posx>
-			<posy>145r</posy>
-			<width>128</width>
-			<height>144</height>
-			<aspectratio aligny="bottom">keep</aspectratio>
-			<texture>mpossible-logo.png</texture>
-			<visible>!IntegerGreaterThan(Container(9002).NumItems,0)</visible>
-			<include>VisibleFadeEffect</include>
-			<include>Window_OpenClose_Animation</include>
-		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>125</posy>
-			<width>1280</width>
-			<height>250</height>
-			<colordiffuse>AAFFFFFF</colordiffuse>
-			<texture>HomeNowPlayingBack.png</texture>
-			<visible>[Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)] | [Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] | [Container(9000).HasFocus(2) + Skin.HasSetting(homepageShowRecentlyAdded)] | [Container(9000).HasFocus(10) + Skin.HasSetting(homepageShowRecentlyAdded)] | [Container(9000).HasFocus(11) + Skin.HasSetting(homepageShowRecentlyAdded)]</visible>
-			<include>Window_OpenClose_Animation</include>
-		</control>
 		<!-- Music Info -->
 		<control type="group">
 			<posx>0</posx>
-			<posy>20</posy>
+			<posy>110</posy>
 			<visible>Player.HasAudio + !Skin.HasSetting(homepageMusicinfo) + ![Container(9000).HasFocus(2) + ![Skin.HasSetting(HomeMenuNoMoviesButton) | Skin.HasSetting(HomeMenuNoTVShowsButton)] + Skin.HasSetting(homepageShowRecentlyAdded)]</visible>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
@@ -114,7 +92,7 @@
 		<!-- Video Info -->
 		<control type="group">
 			<posx>0</posx>
-			<posy>20</posy>
+			<posy>110</posy>
 			<visible>Player.HasVideo + !Skin.HasSetting(homepageVideoinfo) + ![Container(9000).HasFocus(2) + ![Skin.HasSetting(HomeMenuNoMoviesButton) | Skin.HasSetting(HomeMenuNoTVShowsButton)] + Skin.HasSetting(homepageShowRecentlyAdded)]</visible>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
@@ -150,7 +128,7 @@
 					<posy>310</posy>
 					<height>30</height>
 					<width>300</width>
-					<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=blue] / [/COLOR]]</label>
+					<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=pink] / [/COLOR]]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font12</font>
@@ -190,7 +168,7 @@
 					<posy>285</posy>
 					<height>30</height>
 					<width>1000</width>
-					<label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year,[COLOR=grey] (,)[/COLOR]]</label>
+					<label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year,[COLOR=white] (,)[/COLOR]]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
@@ -285,7 +263,7 @@
 		<control type="group">
 			<description>Controls for currently playing media</description>
 			<posx>400r</posx>
-			<posy>340</posy>
+			<posy>426</posy>
 			<visible>Player.HasMedia</visible>
 			<include>VisibleFadeEffect</include>
 			<animation type="WindowOpen" reversible="false">
@@ -420,7 +398,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<texturefocus flipy="true" border="5">HomeSubFO.png</texturefocus>
 				<texturenofocus flipy="true" border="5">HomeSubNF.png</texturenofocus>
@@ -436,7 +414,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<posy>370</posy>
+			<posy>440</posy>
 			<animation type="WindowOpen" reversible="false">
 				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
 				<effect type="fade" start="0" end="100" time="300" />
@@ -447,7 +425,7 @@
 			</animation>
 			<control type="group" id="9001">
 				<posx>0</posx>
-				<posy>70</posy>
+				<posy>86</posy>
 				<onup>9000</onup>
 				<ondown>9002</ondown>
 				<control type="grouplist" id="9010">
@@ -502,21 +480,21 @@
 			</control>
 			<control type="image">
 				<posx>-100</posx>
-				<posy>0</posy>
+				<posy>16</posy>
 				<width>1480</width>
 				<height>75</height>
 				<texture border="0,6,0,6">HomeBack.png</texture>
 			</control>
 			<control type="image">
 				<posx>0</posx>
-				<posy>5</posy>
+				<posy>21</posy>
 				<width>1280</width>
 				<height>6</height>
 				<texture>HomeOverlay1.png</texture>
 			</control>
 			<control type="fixedlist" id="9000">
 				<posx>-110</posx>
-				<posy>5</posy>
+				<posy>21</posy>
 				<width>1500</width>
 				<height>60</height>
 				<onleft>9000</onleft>
@@ -545,14 +523,14 @@
 					</control>
 					<control type="label">
 						<posx>150</posx>
-						<posy>0</posy>
+						<posy>2</posy>
 						<width>290</width>
 						<height>60</height>
-						<font>font50caps_title</font>
-						<textcolor>grey3</textcolor>
+						<font>font28_title</font>
+						<textcolor>white</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
+						<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
 					</control>
 				</itemlayout>
 				<focusedlayout height="60" width="300">
@@ -570,16 +548,23 @@
 						<height>52</height>
 						<texture>HomeSeperator.png</texture>
 					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>3</posy>
+						<width>300</width>
+						<height>60</height>
+						<texture>HomeHighlight.png</texture>
+					</control>					
 					<control type="label">
 						<posx>150</posx>
-						<posy>0</posy>
+						<posy>2</posy>
 						<width>290</width>
 						<height>60</height>
-						<font>font50caps_title</font>
+						<font>font28_title</font>
 						<textcolor>white</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
+						<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
 						<animation effect="fade" start="100" end="50" time="200" condition="!Control.HasFocus(9000)">conditional</animation>
 					</control>
 				</focusedlayout>
@@ -587,14 +572,14 @@
 					<item id="7">
 						<label>8</label>
 						<onclick>ActivateWindow(Weather)</onclick>
-						<icon>special://skin/backgrounds/red.jpg</icon>
+						<icon>special://skin/backgrounds/weather.jpg</icon>
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
 						<visible>!Skin.HasSetting(HomeMenuNoWeatherButton) + !IsEmpty(Weather.Plugin)</visible>
 					</item>
 					<item id="4">
 						<label>1</label>
 						<onclick>ActivateWindow(Pictures)</onclick>
-						<icon>special://skin/backgrounds/green.jpg</icon>
+						<icon>special://skin/backgrounds/pictures.jpg</icon>
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</thumb>
 						<visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
 					</item>
@@ -602,63 +587,63 @@
 						<label>3</label>
 						<onclick condition="!Skin.HasSetting(HomeVideostoFiles)">ActivateWindow(Videos)</onclick>
 						<onclick condition="Skin.HasSetting(HomeVideostoFiles)">ActivateWindow(Videos,Files,Return)</onclick>
-						<icon>special://skin/backgrounds/purple.jpg</icon>
+						<icon>special://skin/backgrounds/videos.jpg</icon>
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
 						<visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
 					</item>
 					<item id="10">
 						<label>20342</label>
 						<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
-						<icon>special://skin/backgrounds/purple.jpg</icon>
+						<icon>special://skin/backgrounds/videos.jpg</icon>
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</thumb>
 						<visible>Skin.HasSetting(HomeMenuNoMoviesButton) + Library.HasContent(Movies)</visible>
 					</item>
 					<item id="11">
 						<label>20343</label>
 						<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
-						<icon>special://skin/backgrounds/purple.jpg</icon>
+						<icon>special://skin/backgrounds/videos.jpg</icon>
 						<thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
 						<visible>Skin.HasSetting(HomeMenuNoTVShowsButton) + Library.HasContent(TVShows)</visible>
 					</item>
 					<item id="3">
 						<label>2</label>
 						<onclick>ActivateWindow(Music)</onclick>
-						<icon>special://skin/backgrounds/blue.jpg</icon>
+						<icon>special://skin/backgrounds/music.jpg</icon>
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
 						<visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
 					</item>
 					<item id="1">
 						<label>0</label>
 						<onclick>ActivateWindow(Programs,Addons,return)</onclick>
-						<icon>special://skin/backgrounds/cyan.jpg</icon>
+						<icon>special://skin/backgrounds/programs.jpg</icon>
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
 						<visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
 					</item>
 					<item id="6">
 						<label>341</label>
 						<onclick>XBMC.PlayDVD()</onclick>
-						<icon>special://skin/backgrounds/purple.jpg</icon>
+						<icon>special://skin/backgrounds/playdisc.jpg</icon>
 						<thumb>$INFO[Skin.String(Home_Custom_Back_PlayDisc_Folder)]</thumb>
 						<visible>System.HasMediaDVD</visible>
 					</item>
 					<item id="5">
 						<label>13000</label>
 						<onclick>ActivateWindow(Settings)</onclick>
-						<icon>special://skin/backgrounds/orange.jpg</icon>
+						<icon>special://skin/backgrounds/settings.jpg</icon>
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</thumb>
 					</item>
 				</content>
 			</control>
 			<control type="image">
 				<posx>0</posx>
-				<posy>6</posy>
+				<posy>22</posy>
 				<width>128</width>
 				<height>50</height>
 				<texture>SideFade.png</texture>
 			</control>
 			<control type="image">
 				<posx>128r</posx>
-				<posy>6</posy>
+				<posy>22</posy>
 				<width>128</width>
 				<height>60</height>
 				<texture flipx="true">SideFade.png</texture>
@@ -667,10 +652,10 @@
 		<control type="fixedlist" id="9002">
 			<animation effect="slide" start="0,0" end="-91,0" time="0" condition="StringCompare(Container(9002).NumItems,2) | StringCompare(Container(9002).NumItems,4)">conditional</animation>
 			<include>Window_OpenClose_Animation</include>
-			<posx>0</posx>
-			<posy>190r</posy>
+			<posx>292</posx>
+			<posy>159r</posy>
 			<width>1280</width>
-			<height>200</height>
+			<height>120</height>
 			<onleft>9002</onleft>
 			<onright>9002</onright>
 			<onup>9001</onup>
@@ -680,74 +665,58 @@
 			<focusposition>3</focusposition>
 			<movement>2</movement>
 			<orientation>Horizontal</orientation>
-			<itemlayout height="200" width="182">
+			<itemlayout height="120" width="100">
 				<control type="image">
 					<posx>0</posx>
-					<posy>0</posy>
-					<width>180</width>
-					<height>120</height>
+					<posy>10</posy>
+					<width>100</width>
+					<height>70</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
-					<bordertexture border="5">button-nofocus.png</bordertexture>
-					<bordersize>5</bordersize>
+					<bordertexture border="10">button-nofocus.png</bordertexture>
+					<bordersize>10</bordersize>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 				</control>
-				<control type="image">
-					<posx>5</posx>
-					<posy>120</posy>
-					<width>170</width>
-					<height>110</height>
-					<aspectratio aligny="top">keep</aspectratio>
-					<texture diffuse="diffuse_mirror2.png" flipy="true" background="true">$INFO[ListItem.Icon]</texture>
-				</control>
 				<control type="label">
-					<posx>91</posx>
-					<posy>125</posy>
-					<width>180</width>
+					<posx>50</posx>
+					<posy>85</posy>
+					<width>90</width>
 					<height>20</height>
-					<font>font12</font>
-					<textcolor>grey2</textcolor>
+					<font>font10</font>
+					<textcolor>white</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
-			<focusedlayout height="200" width="182">
+			<focusedlayout height="120" width="100">		  
 				<control type="image">
 					<posx>0</posx>
-					<posy>0</posy>
-					<width>180</width>
-					<height>120</height>
+					<posy>10</posy>
+					<width>100</width>
+					<height>70</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
-					<bordertexture border="5">button-nofocus.png</bordertexture>
-					<bordersize>5</bordersize>
+					<bordertexture border="10">button-nofocus.png</bordertexture>
+					<bordersize>10</bordersize>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<visible>!Control.HasFocus(9002)</visible>
 				</control>
 				<control type="image">
 					<posx>0</posx>
-					<posy>0</posy>
-					<width>180</width>
-					<height>120</height>
+					<posy>10</posy>
+					<width>100</width>
+					<height>70</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
-					<bordertexture border="5">folder-focus.png</bordertexture>
-					<bordersize>5</bordersize>
+					<bordertexture border="10">folder-focus.png</bordertexture>
+					<bordersize>10</bordersize>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<visible>Control.HasFocus(9002)</visible>
 				</control>
-				<control type="image">
-					<posx>5</posx>
-					<posy>120</posy>
-					<width>170</width>
-					<height>110</height>
-					<aspectratio aligny="top">keep</aspectratio>
-					<texture diffuse="diffuse_mirror2.png" flipy="true" background="true">$INFO[ListItem.Icon]</texture>
-				</control>
 				<control type="label">
-					<posx>91</posx>
-					<posy>125</posy>
-					<width>180</width>
+					<posx>50</posx>
+					<posy>85</posy>
+					<width>90</width>
 					<height>20</height>
-					<font>font12</font>
+					<font>font10</font>
 					<textcolor>white</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -755,12 +724,12 @@
 					<visible>Control.HasFocus(9002)</visible>
 				</control>
 				<control type="label">
-					<posx>91</posx>
-					<posy>125</posy>
-					<width>180</width>
+					<posx>50</posx>
+					<posy>85</posy>
+					<width>90</width>
 					<height>20</height>
-					<font>font12</font>
-					<textcolor>grey2</textcolor>
+					<font>font10</font>
+					<textcolor>white</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -996,7 +965,7 @@
 				<description>time background</description>
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>180</width>
+				<width>130</width>
 				<height>35</height>
 				<texture flipx="true" border="32,0,0,0">header.png</texture>
 			</control>
@@ -1048,7 +1017,7 @@
 				<font>font12</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<label>[COLOR=grey]$INFO[System.Date][/COLOR] | $INFO[System.Time]</label>
+				<label>[COLOR=white]$INFO[System.Date][/COLOR] | $INFO[System.Time]</label>
 			</control>
 		</control>
 	</controls>	

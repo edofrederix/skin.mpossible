@@ -1,10 +1,5 @@
 <includes>
 	<include name="HomeSubMenuVideos">
-		<control type="image" id="90101">
-			<width>35</width>
-			<height>35</height>
-			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
-		</control>
 		<control type="button" id="90102">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>342</label>
@@ -39,18 +34,8 @@
 			<label>24001</label>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 		</control>
-		<control type="image" id="90108">
-			<width>35</width>
-			<height>35</height>
-			<texture border="0,0,0,3">HomeSubEnd.png</texture>
-		</control>
 	</include>
 	<include name="HomeSubMenuMovies">
-		<control type="image" id="90161">
-			<width>35</width>
-			<height>35</height>
-			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
-		</control>
 		<control type="button" id="90162">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>31328</label>
@@ -76,18 +61,8 @@
 			<label>344</label>
 			<onclick>ActivateWindow(Videos,MovieActors,return)</onclick>
 		</control>
-		<control type="image" id="90167">
-			<width>35</width>
-			<height>35</height>
-			<texture border="0,0,0,3">HomeSubEnd.png</texture>
-		</control>
 	</include>
 	<include name="HomeSubMenuTVShows">
-		<control type="image" id="90171">
-			<width>35</width>
-			<height>35</height>
-			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
-		</control>
 		<control type="button" id="90172">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>31328</label>
@@ -113,18 +88,8 @@
 			<label>344</label>
 			<onclick>ActivateWindow(Videos,TVShowActors,return)</onclick>
 		</control>
-		<control type="image" id="90177">
-			<width>35</width>
-			<height>35</height>
-			<texture border="0,0,0,3">HomeSubEnd.png</texture>
-		</control>
 	</include>
 	<include name="HomeSubMenuMusic">
-		<control type="image" id="90111">
-			<width>35</width>
-			<height>35</height>
-			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
-		</control>
 		<control type="button" id="90112">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>133</label>
@@ -166,18 +131,8 @@
 			<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
 			<visible>!Library.HasContent(Music)</visible>
 		</control>
-		<control type="image" id="90119">
-			<width>35</width>
-			<height>35</height>
-			<texture border="0,0,0,3">HomeSubEnd.png</texture>
-		</control>
 	</include>
 	<include name="HomeSubMenuSystem">
-		<control type="image" id="90121">
-			<width>35</width>
-			<height>35</height>
-			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
-		</control>
 		<control type="button" id="90122">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>5</label>
@@ -198,45 +153,20 @@
 			<label>130</label>
 			<onclick>ActivateWindow(SystemInfo)</onclick>
 		</control>
-		<control type="image" id="90126">
-			<width>35</width>
-			<height>35</height>
-			<texture border="0,0,0,3">HomeSubEnd.png</texture>
-		</control>
 	</include>
 	<include name="HomeSubMenuPlayDisc">
-		<control type="image" id="90131">
-			<width>35</width>
-			<height>35</height>
-			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
-		</control>
 		<control type="button" id="90132">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>13391</label>
 			<onclick>SetFocus(9000)</onclick>
 			<onclick>EjectTray()</onclick>
 		</control>
-		<control type="image" id="90126">
-			<width>35</width>
-			<height>35</height>
-			<texture border="0,0,0,3">HomeSubEnd.png</texture>
-		</control>
 	</include>
 	<include name="HomeSubMenuPictures">
-		<control type="image" id="90141">
-			<width>35</width>
-			<height>35</height>
-			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
-		</control>
 		<control type="button" id="90142">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>24001</label>
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
-		</control>
-		<control type="image" id="90146">
-			<width>35</width>
-			<height>35</height>
-			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
 </includes>
