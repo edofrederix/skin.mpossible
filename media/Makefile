@@ -9,13 +9,12 @@ all: $(TARGET)
 
 .PHONY: force
 
-$(TARGET): $(XBMCTEX) $(IMAGES)
-	$(XBMCTEX) -input . -output $(TARGET)
+$(TARGET): $(IMAGES)
+        $(XBMCTEX) -input . -output $(TARGET)
 
 $(XBMCTEX): force
 	$(MAKE) -C /build/buildd/xbmc-11.0~git20120423.cd20772/tools/TexturePacker
 
 clean:
-	rm -f $(TARGET)
+        rm -f $(TARGET)
 distclean: clean
-
