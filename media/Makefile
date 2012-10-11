@@ -1,5 +1,5 @@
-TARGET=Textures.xbt
-XBMCTEX=/build/buildd/xbmc-11.0~git20120423.cd20772/tools/TexturePacker/TexturePacker
+TARGET=textures.xbt
+XBMCTEX=TexturePacker
 
 IMAGES := $(shell find . -name "*jpg")
 IMAGES += $(shell find . -name "*png")
@@ -10,11 +10,8 @@ all: $(TARGET)
 .PHONY: force
 
 $(TARGET): $(IMAGES)
-        $(XBMCTEX) -input . -output $(TARGET)
-
-$(XBMCTEX): force
-	$(MAKE) -C /build/buildd/xbmc-11.0~git20120423.cd20772/tools/TexturePacker
+	$(XBMCTEX) -input . -output $(TARGET)
 
 clean:
-        rm -f $(TARGET)
+	rm -f $(TARGET)
 distclean: clean
