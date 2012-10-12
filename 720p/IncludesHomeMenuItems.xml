@@ -168,7 +168,7 @@
 			<label>24001</label>
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 		</control>
-	</include
+	</include>
 	<include name="HomeSubMenuLiveTV">
 		<control type="button" id="90142">
 			<include>ButtonHomeSubCommonValues</include>
