@@ -189,5 +189,8 @@
   <string id="31907">Video Forecast [COLOR=grey2](Fullscreen Playback)[/COLOR]</string>
   <string id="31908">Chance of Precipitation</string>
   <string id="31909">Fetching forecast info...</string>
+  
+  <!-- extra mPossible -->
+  <string id="50001">Clean library</string>
 
 </strings>

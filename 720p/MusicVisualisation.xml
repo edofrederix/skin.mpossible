@@ -1,4 +1,4 @@
-﻿<window id="2006">
+<window id="2006">
 	<defaultcontrol>-</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
@@ -16,10 +16,10 @@
 			<visible>[Player.ShowInfo | Window.IsActive(MusicOSD)] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
 			<control type="image">
 				<posx>0</posx>
-				<posy>-150</posy>
+				<posy>-218</posy>
 				<width>1280</width>
 				<height>256</height>
-				<texture flipy="true">HomeNowPlayingBack.png</texture>
+				<texture flipy="true">HomeNowPlayingBackVideoMusic.png</texture>
 			</control>
 			<control type="label">
 				<description>Partymode Header label</description>
@@ -65,10 +65,10 @@
 			</control>
 			<control type="image">
 				<posx>0</posx>
-				<posy>230r</posy>
+				<posy>180r</posy>
 				<width>1280</width>
-				<height>230</height>
-				<texture>HomeNowPlayingBack.png</texture>
+				<height>180</height>
+				<texture>HomeNowPlayingBackVideoMusic.png</texture>
 			</control>
 			<control type="image">
 				<description>cover image</description>

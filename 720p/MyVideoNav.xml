@@ -131,6 +131,18 @@
 					<selected>system.ismaster</selected>
 					<visible>system.haslocks</visible>
 				</control>
+				<control type="button" id="20">
+					<description>Clean library</description>
+					<include>ButtonCommonValues</include>
+					<label>50001</label>
+					<onclick>CleanLibrary(video)</onclick>
+				</control>
+				<control type="button" id="21">
+					<description>Update library</description>
+					<include>ButtonCommonValues</include>
+					<label>50002</label>
+					<onclick>UpdateLibrary(video)</onclick>
+				</control>												
 				<include>CommonNowPlaying_Controls</include>
 			</control>
 		</control>

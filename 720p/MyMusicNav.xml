@@ -107,6 +107,18 @@
 					<label>589</label>
 					<include>ButtonCommonValues</include>
 				</control>
+				<control type="button" id="20">
+					<description>Clean library</description>
+					<include>ButtonCommonValues</include>
+					<label>50001</label>
+					<onclick>CleanLibrary(music)</onclick>
+				</control>
+				<control type="button" id="21">
+					<description>Update library</description>
+					<include>ButtonCommonValues</include>
+					<label>50002</label>
+					<onclick>UpdateLibrary(music)</onclick>
+				</control>					
 				<include>CommonNowPlaying_Controls</include>
 			</control>
 		</control>
