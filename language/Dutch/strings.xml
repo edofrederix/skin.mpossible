@@ -193,6 +193,7 @@
   <string id="31909">Weersvoorspelling ophalen...</string>
   
   <!-- extra mPossible -->
-  <string id="50001">Bieb opschonen</string>  
+  <string id="50001">Bieb opschonen</string>
+  <string id="50002">Bieb updaten</string>
   
 </strings>

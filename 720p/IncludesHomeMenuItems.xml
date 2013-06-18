@@ -154,6 +154,11 @@
 			<onclick>ActivateWindow(SystemInfo)</onclick>
 		</control>
 	</include>
+	<!-- mPossible submenu -->
+  <include name="HomeSubMenuAddOns">
+    <!-- no items for now -->
+  </include>
+	<!-- /mPossible submenu -->
 	<include name="HomeSubMenuPlayDisc">
 		<control type="button" id="90132">
 			<include>ButtonHomeSubCommonValues</include>

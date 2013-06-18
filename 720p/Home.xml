@@ -742,6 +742,15 @@
 					<visible>Container(9000).HasFocus(6)</visible>
 					<include>HomeSubMenuPlayDisc</include> <!-- Buttons for the grouplist -->
 				</control>
+        <!-- mPossible submenu -->
+        <control type="grouplist" id="9018">
+          <include>HomeSubMenuCommonValues</include>
+          <onleft>9018</onleft>
+          <onright>9018</onright>
+          <visible>Container(9000).HasFocus(1)</visible>
+          <include>HomeSubMenuAddOns</include> <!-- Buttons for the grouplist -->
+        </control>
+        <!-- /mPossible submenu -->     
 				<control type="grouplist" id="9014">
 					<include>HomeSubMenuCommonValues</include>
 					<onleft>9014</onleft>
@@ -897,14 +906,26 @@
 						<icon>special://skin/backgrounds/music.jpg</icon>
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
 						<visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
-					</item>
-					<item id="1">
-						<label>0</label>
-						<onclick>ActivateWindow(Programs,Addons,return)</onclick>
-						<icon>special://skin/backgrounds/programs.jpg</icon>
-						<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
-						<visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
-					</item>
+					</item>					
+          <!-- mPossible group -->
+          <item id="1">
+            <label>Programma's</label>
+            <onclick>ActivateWindow(Programs,Addons,return)</onclick>
+            <icon>special://skin/backgrounds/programs.jpg</icon>
+            <thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
+            <visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
+          </item>
+          <!-- /mPossible group -->
+          <!-- Desktop group -->
+          <item id="7">
+            <label>Desktop</label>
+            <!--<onclick>ActivateWindow(Programs,Addons,return)</onclick>-->
+            <onclick>Desktop()</onclick>
+            <icon>special://skin/backgrounds/programs.jpg</icon>
+            <thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
+            <visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
+          </item>
+          <!-- /Desktop group -->
 					<item id="6">
 						<label>341</label>
 						<onclick>XBMC.PlayDVD()</onclick>
